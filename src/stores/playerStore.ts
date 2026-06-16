@@ -1,0 +1,4 @@
+import { create } from 'zustand'; import type { Player } from '../models/player'; import { logGame } from '../utils/gameLogger';
+const initial:Player={id:'p1',name:'Bug Hunter',hp:80,max_hp:80,mp:30,max_mp:30,level:1,exp:0,attack:12,defense:3,position:{x:2,y:2},inventory:[]};
+export const usePlayerStore=create<{player:Player; setName:(name:string)=>void; move:(dx:number,dy:number)=>void; heal:(v:number)=>void}>((set)=>({player:initial,setName:(name)=>set((s)=>({player:{...s.player,name}})),move:(dx,dy)=>set((s)=>{const p={...s.player,position:{x:Math.max(1,Math.min(16,s.player.position.x+dx)),y:Math.max(1,Math.min(10,s.player.position.y+dy))}}; logGame('PLAYER_MOVE',{id:p.id,x:p.position.x,y:p.position.y}); return {player:p};}),heal:(v)=>set((s)=>({player:{...s.player,hp:Math.min(s.player.max_hp,s.player.hp+v)}}))}));
+

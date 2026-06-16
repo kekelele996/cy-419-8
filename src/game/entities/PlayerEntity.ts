@@ -1,0 +1,1 @@
+import Phaser from 'phaser'; export class PlayerEntity extends Phaser.GameObjects.Rectangle { constructor(scene:Phaser.Scene,x:number,y:number){ super(scene,x,y,22,22,0x9be564); scene.add.existing(this); } }

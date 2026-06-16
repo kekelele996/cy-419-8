@@ -1,0 +1,1 @@
+import { BugType } from '../constants/bug'; export interface Bug { id:string; type:BugType; hp:number; attack:number; defense:number; position:{x:number;y:number}; status:'alive'|'dead'; drop_item_id?:string }

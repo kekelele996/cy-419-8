@@ -1,0 +1,1 @@
+import { RouterProvider } from 'react-router-dom'; import { router } from './router'; import { GlobalErrorBoundary } from './components/common/GlobalErrorBoundary'; export default function App(){ return <GlobalErrorBoundary><RouterProvider router={router} /></GlobalErrorBoundary>; }

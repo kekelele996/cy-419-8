@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body { margin: 0; background: #101612; color: #f4f1dc; font-family: "Trebuchet MS", "PingFang SC", sans-serif; }
+button { letter-spacing: 0; }
+.page { min-height: calc(100vh - 64px); padding: 28px clamp(16px, 5vw, 64px); }
+.panel { border: 1px solid #4d6b50; background: #18231a; border-radius: 8px; padding: 18px; }
+.grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+

@@ -1,0 +1,1 @@
+import type { ButtonHTMLAttributes, PropsWithChildren } from 'react'; export function GameButton({children,...props}:PropsWithChildren<ButtonHTMLAttributes<HTMLButtonElement>>){ return <button {...props} className="px-4 py-2 rounded border border-lime-500 bg-lime-200 text-slate-950 disabled:opacity-50">{children}</button>; }

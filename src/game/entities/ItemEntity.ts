@@ -1,0 +1,1 @@
+import Phaser from 'phaser'; import { ItemType } from '../../constants/item'; export class ItemEntity extends Phaser.GameObjects.Ellipse { itemType:ItemType; constructor(scene:Phaser.Scene,x:number,y:number,type:ItemType){ super(scene,x,y,14,14,0xf3c969); this.itemType=type; scene.add.existing(this); } }

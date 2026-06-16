@@ -1,0 +1,1 @@
+import { useDungeonStore } from '../../stores/dungeonStore'; export function MiniMap(){ const dungeon=useDungeonStore(s=>s.dungeon); return <div className="panel"><strong>MiniMap</strong><div className="grid grid-cols-6 gap-1 mt-2">{dungeon.tiles.flat().slice(0,36).map((tile,i)=><span key={i} className={tile==='wall'?'bg-stone-600 h-2':'bg-lime-700 h-2'} />)}</div></div>; }

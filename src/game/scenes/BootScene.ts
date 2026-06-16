@@ -1,0 +1,1 @@
+import Phaser from 'phaser'; import { logGame } from '../../utils/gameLogger'; export class BootScene extends Phaser.Scene { constructor(){ super('BootScene'); } create(){ logGame('PHASER_BOOT'); this.scene.start('GameScene'); } }

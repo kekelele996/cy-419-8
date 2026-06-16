@@ -1,0 +1,1 @@
+import { messages } from '../../constants/messages'; export function LeaderboardPanel(){ const rows=JSON.parse(localStorage.getItem('debugquest:leaderboard')||'[]') as {name:string;score:number}[]; return <div className="panel"><strong>排行榜</strong>{rows.length?rows.map((r,i)=><p key={r.name}>{i+1}. {r.name} {r.score}</p>):<p>{messages.emptyLeaderboard}</p>}</div>; }

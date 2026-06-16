@@ -1,0 +1,1 @@
+import { useNavigate } from 'react-router-dom'; import { GameButton } from '../components/common/GameButton'; import { LeaderboardPanel } from '../components/common/LeaderboardPanel'; export function Leaderboard(){ const nav=useNavigate(); return <main className="page"><LeaderboardPanel /><GameButton onClick={()=>nav('/start')}>返回开始</GameButton></main>; }

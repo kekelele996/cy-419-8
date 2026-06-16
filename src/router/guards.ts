@@ -1,0 +1,1 @@
+import { logGame } from '../utils/gameLogger'; import { BugType } from '../constants/bug'; import { ItemType } from '../constants/item'; export function guardRoute(path:string){ logGame('ROUTE_ENTER',{path}); return { path, bugType:BugType.NULL_POINTER, itemType:ItemType.POTION }; }

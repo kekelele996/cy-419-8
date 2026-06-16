@@ -1,0 +1,1 @@
+import { create } from 'zustand'; import type { Dungeon } from '../models/dungeon'; import type { Bug } from '../models/bug'; import { makeBugs, makeDungeon } from '../utils/randomDungeon'; export const useDungeonStore=create<{dungeon:Dungeon; bugs:Bug[]; reset:()=>void}>((set)=>({dungeon:makeDungeon(1),bugs:makeBugs(),reset:()=>set({dungeon:makeDungeon(1),bugs:makeBugs()})}));

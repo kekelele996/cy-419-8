@@ -1,0 +1,1 @@
+import { usePlayerStore } from '../../stores/playerStore'; import { itemTypeText } from '../../utils/formatters'; export function InventoryPanel(){ const items=usePlayerStore(s=>s.player.inventory); return <div className="panel"><strong>背包</strong>{items.length?items.map(i=><p key={i.id}>{itemTypeText[i.type]}</p>):<p>暂无道具</p>}</div>; }
