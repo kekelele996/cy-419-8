@@ -1,6 +1,6 @@
 export const LOG_TEMPLATES = {
   PLAYER_MOVE: 'Player[id={id}] move to {x},{y}', PLAYER_ATTACK: 'Player[id={id}] attack Bug[type={type}]', PLAYER_LEVEL_UP: 'Player[id={id}] level up {level}',
-  PLAYER_DAMAGE: 'Player[id={id}] damage {value}', PLAYER_HEAL: 'Player[id={id}] heal {value}', DUNGEON_GENERATE: 'Dungeon[level={level}] generate',
+  PLAYER_DAMAGE: 'Player[id={id}] damage {value}', PLAYER_HEAL: 'Player[id={id}] heal {value} HP', PLAYER_MANA: 'Player[id={id}] restore {value} MP', PLAYER_BUFF: 'Player[id={id}] gain {type} +{value} for {duration} turns', DUNGEON_GENERATE: 'Dungeon[level={level}] generate',
   DUNGEON_SWITCH: 'Dungeon[level={level}] switch', FOG_REVEAL: 'Fog[position={x},{y}] reveal', BUG_SPAWN: 'Bug[type={type}] spawn',
   BUG_MOVE: 'Bug[id={id}] move', BUG_ATTACK: 'Bug[id={id}] attack', BUG_DEAD: 'Bug[type={type}] dead',
   ITEM_SPAWN: 'Item[type={type}] spawn', ITEM_PICK: 'Item[type={type}] pick', ITEM_USE: 'Item[type={type}] use',
